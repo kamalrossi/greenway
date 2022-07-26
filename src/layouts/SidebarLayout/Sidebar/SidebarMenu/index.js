@@ -215,7 +215,7 @@ function SidebarMenu() {
                   to="/dashboards/crypto"
                   startIcon={<BrightnessLowTwoToneIcon />}
                 >
-                  Cryptocurrency
+                  Order
                 </Button>
               </ListItem>
               <ListItem component="div">
@@ -226,7 +226,7 @@ function SidebarMenu() {
                   to="/dashboards/messenger"
                   startIcon={<MmsTwoToneIcon />}
                 >
-                  Messenger
+                 Alerts
                 </Button>
               </ListItem>
             </List>
@@ -236,7 +236,7 @@ function SidebarMenu() {
           component="div"
           subheader={
             <ListSubheader component="div" disableSticky>
-              Management
+            System Admin
             </ListSubheader>
           }
         >
@@ -250,7 +250,7 @@ function SidebarMenu() {
                   to="/management/transactions"
                   startIcon={<TableChartTwoToneIcon />}
                 >
-                  Transactions List
+                 Manager
                 </Button>
               </ListItem>
             </List>
@@ -260,7 +260,7 @@ function SidebarMenu() {
           component="div"
           subheader={
             <ListSubheader component="div" disableSticky>
-              Accounts
+              Actor
             </ListSubheader>
           }
         >
@@ -274,7 +274,7 @@ function SidebarMenu() {
                   to="/management/profile/details"
                   startIcon={<AccountCircleTwoToneIcon />}
                 >
-                  User Profile
+                  Customer
                 </Button>
               </ListItem>
               <ListItem component="div">
@@ -285,7 +285,7 @@ function SidebarMenu() {
                   to="/management/profile/settings"
                   startIcon={<DisplaySettingsTwoToneIcon />}
                 >
-                  Account Settings
+                  Driver
                 </Button>
               </ListItem>
             </List>
@@ -295,7 +295,7 @@ function SidebarMenu() {
           component="div"
           subheader={
             <ListSubheader component="div" disableSticky>
-              Components
+             Service
             </ListSubheader>
           }
         >
@@ -309,7 +309,7 @@ function SidebarMenu() {
                   to="/components/buttons"
                   startIcon={<BallotTwoToneIcon />}
                 >
-                  Buttons
+                Requests
                 </Button>
               </ListItem>
               <ListItem component="div">
@@ -320,7 +320,7 @@ function SidebarMenu() {
                   to="/components/modals"
                   startIcon={<BeachAccessTwoToneIcon />}
                 >
-                  Modals
+                Inventory  
                 </Button>
               </ListItem>
               <ListItem component="div">
@@ -331,7 +331,7 @@ function SidebarMenu() {
                   to="/components/accordions"
                   startIcon={<EmojiEventsTwoToneIcon />}
                 >
-                  Accordions
+                 Billing
                 </Button>
               </ListItem>
               <ListItem component="div">
@@ -342,7 +342,7 @@ function SidebarMenu() {
                   to="/components/tabs"
                   startIcon={<FilterVintageTwoToneIcon />}
                 >
-                  Tabs
+                  Reporting
                 </Button>
               </ListItem>
               <ListItem component="div">
@@ -353,7 +353,7 @@ function SidebarMenu() {
                   to="/components/badges"
                   startIcon={<HowToVoteTwoToneIcon />}
                 >
-                  Badges
+                  Logs
                 </Button>
               </ListItem>
               <ListItem component="div">
