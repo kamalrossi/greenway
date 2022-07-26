@@ -1,222 +1,333 @@
 import {
   Button,
   Card,
-  Grid,
   Box,
-  CardContent,
+  Grid,
   Typography,
+  useTheme,
+  styled,
   Avatar,
+  Divider,
   alpha,
-  Tooltip,
-  CardActionArea,
-  styled
+  ListItem,
+  ListItemText,
+  List,
+  ListItemAvatar
 } from '@mui/material';
-import AddTwoToneIcon from '@mui/icons-material/AddTwoTone';
+import TrendingUp from '@mui/icons-material/TrendingUp';
+import Text from 'src/components/Text';
+import Chart from 'react-apexcharts';
 
-const AvatarWrapper = styled(Avatar)(
+const AvatarSuccess = styled(Avatar)(
   ({ theme }) => `
-    margin: ${theme.spacing(2, 0, 1, -0.5)};
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: ${theme.spacing(1)};
+      background-color: ${theme.colors.success.main};
+      color: ${theme.palette.success.contrastText};
+      width: ${theme.spacing(8)};
+      height: ${theme.spacing(8)};
+      box-shadow: ${theme.colors.shadows.success};
+`
+);
+
+const ListItemAvatarWrapper = styled(ListItemAvatar)(
+  ({ theme }) => `
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: ${theme.spacing(1)};
+  padding: ${theme.spacing(0.5)};
+  border-radius: 60px;
+  background: ${
+    theme.palette.mode === 'dark'
+      ? theme.colors.alpha.trueWhite[30]
+      : alpha(theme.colors.alpha.black[100], 0.07)
+  };
+
+  img {
+    background: ${theme.colors.alpha.trueWhite[100]};
     padding: ${theme.spacing(0.5)};
-    border-radius: 60px;
-    height: ${theme.spacing(5.5)};
-    width: ${theme.spacing(5.5)};
-    background: ${
-      theme.palette.mode === 'dark'
-        ? theme.colors.alpha.trueWhite[30]
-        : alpha(theme.colors.alpha.black[100], 0.07)
-    };
-  
-    img {
-      background: ${theme.colors.alpha.trueWhite[100]};
-      padding: ${theme.spacing(0.5)};
-      display: block;
-      border-radius: inherit;
-      height: ${theme.spacing(4.5)};
-      width: ${theme.spacing(4.5)};
+    display: block;
+    border-radius: inherit;
+    height: ${theme.spacing(4.5)};
+    width: ${theme.spacing(4.5)};
+  }
+`
+);
+
+function AccountBalance() {
+  const theme = useTheme();
+
+  const chartOptions = {
+    chart: {
+      background: 'transparent',
+      stacked: false,
+      toolbar: {
+        show: false
+      }
+    },
+    plotOptions: {
+      pie: {
+        donut: {
+          size: '60%'
+        }
+      }
+    },
+    colors: ['#ff9900', '#1c81c2', '#333', '#5c6ac0'],
+    dataLabels: {
+      enabled: true,
+      formatter(val) {
+        return `${val}%`;
+      },
+      style: {
+        colors: [theme.colors.alpha.trueWhite[100]]
+      },
+      background: {
+        enabled: true,
+        foreColor: theme.colors.alpha.trueWhite[100],
+        padding: 8,
+        borderRadius: 4,
+        borderWidth: 0,
+        opacity: 0.3,
+        dropShadow: {
+          enabled: true,
+          top: 1,
+          left: 1,
+          blur: 1,
+          color: theme.colors.alpha.black[70],
+          opacity: 0.5
+        }
+      },
+      dropShadow: {
+        enabled: true,
+        top: 1,
+        left: 1,
+        blur: 1,
+        color: theme.colors.alpha.black[50],
+        opacity: 0.5
+      }
+    },
+    fill: {
+      opacity: 1
+    },
+    labels: ['Wastage Bill', 'Wastage', 'Renewable Energy', 'New Product'],
+    legend: {
+      labels: {
+        colors: theme.colors.alpha.trueWhite[100]
+      },
+      show: false
+    },
+    stroke: {
+      width: 0
+    },
+    theme: {
+      mode: theme.palette.mode
     }
-`
-);
+  };
 
-const AvatarAddWrapper = styled(Avatar)(
-  ({ theme }) => `
-        background: ${theme.colors.alpha.black[10]};
-        color: ${theme.colors.primary.main};
-        width: ${theme.spacing(8)};
-        height: ${theme.spacing(8)};
-`
-);
+  const chartSeries = [10, 20, 30, 40];
 
-const CardAddAction = styled(Card)(
-  ({ theme }) => `
-        border: ${theme.colors.primary.main} dashed 1px;
-        height: 100%;
-        color: ${theme.colors.primary.main};
-        transition: ${theme.transitions.create(['all'])};
-        
-        .MuiCardActionArea-root {
-          height: 100%;
-          justify-content: center;
-          align-items: center;
-          display: flex;
-        }
-        
-        .MuiTouchRipple-root {
-          opacity: .2;
-        }
-        
-        &:hover {
-          border-color: ${theme.colors.alpha.black[70]};
-        }
-`
-);
-
-function Wallets() {
   return (
-    <>
-      <Box
-        display="flex"
-        alignItems="center"
-        justifyContent="space-between"
-        sx={{
-          pb: 3
-        }}
-      >
-        <Typography variant="h3">Wallets</Typography>
-        <Button
-          size="small"
-          variant="outlined"
-          startIcon={<AddTwoToneIcon fontSize="small" />}
+    <Card>
+      <Grid spacing={0} container>
+        <Grid item xs={12} md={6}>
+          <Box p={4}>
+            <Typography
+              sx={{
+                pb: 3
+              }}
+              variant="h4"
+            >
+              Net Revenue
+            </Typography>
+            <Box>
+              <Typography variant="h1" gutterBottom>
+                $60000
+              </Typography>
+              <Typography
+                variant="h4"
+                fontWeight="normal"
+                color="text.secondary"
+              >
+                Including Wastage Bill, Renewable Plant and Innovation outcome
+              </Typography>
+              <Box
+                display="flex"
+                sx={{
+                  py: 4
+                }}
+                alignItems="center"
+              >
+                <AvatarSuccess
+                  sx={{
+                    mr: 2
+                  }}
+                  variant="rounded"
+                >
+                  <TrendingUp fontSize="large" />
+                </AvatarSuccess>
+                <Box>
+                  <Typography variant="h4">+ $300</Typography>
+                  <Typography variant="subtitle2" noWrap>
+                  current week
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+            <Grid container spacing={3}>
+              <Grid sm item>
+                <Button fullWidth variant="outlined">
+                  Try Now                </Button>
+              </Grid>
+              <Grid sm item>
+                <Button fullWidth variant="contained">
+                  Buy Now
+                </Button>
+              </Grid>
+            </Grid>
+          </Box>
+        </Grid>
+        <Grid
+          sx={{
+            position: 'relative'
+          }}
+          display="flex"
+          alignItems="center"
+          item
+          xs={12}
+          md={6}
         >
-          Add new wallet
-        </Button>
-      </Box>
-      <Grid container spacing={3}>
-        <Grid xs={12} sm={6} md={3} item>
-          <Card
+          <Box
+            component="span"
             sx={{
-              px: 1
+              display: { xs: 'none', md: 'inline-block' }
             }}
           >
-            <CardContent>
-              <AvatarWrapper>
-                <img
-                  alt="BTC"
-                  src="/static/images/placeholders/logo/bitcoin.png"
+            <Divider absolute orientation="vertical" />
+          </Box>
+          <Box py={4} pr={4} flex={1}>
+            <Grid container spacing={0}>
+              <Grid
+                xs={12}
+                sm={5}
+                item
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <Chart
+                  height={250}
+                  options={chartOptions}
+                  series={chartSeries}
+                  type="donut"
                 />
-              </AvatarWrapper>
-              <Typography variant="h5" noWrap>
-                Bitcoin
-              </Typography>
-              <Typography variant="subtitle1" noWrap>
-                BTC
-              </Typography>
-              <Box
-                sx={{
-                  pt: 3
-                }}
-              >
-                <Typography variant="h3" gutterBottom noWrap>
-                  $3,586.22
-                </Typography>
-                <Typography variant="subtitle2" noWrap>
-                  1.25843 BTC
-                </Typography>
-              </Box>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid xs={12} sm={6} md={3} item>
-          <Card
-            sx={{
-              px: 1
-            }}
-          >
-            <CardContent>
-              <AvatarWrapper>
-                <img
-                  alt="Ripple"
-                  src="/static/images/placeholders/logo/ripple.png"
-                />
-              </AvatarWrapper>
-              <Typography variant="h5" noWrap>
-                Ripple
-              </Typography>
-              <Typography variant="subtitle1" noWrap>
-                XRP
-              </Typography>
-              <Box
-                sx={{
-                  pt: 3
-                }}
-              >
-                <Typography variant="h3" gutterBottom noWrap>
-                  $586.83
-                </Typography>
-                <Typography variant="subtitle2" noWrap>
-                  5,783 XRP
-                </Typography>
-              </Box>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid xs={12} sm={6} md={3} item>
-          <Card
-            sx={{
-              px: 1
-            }}
-          >
-            <CardContent>
-              <AvatarWrapper>
-                <img
-                  alt="Cardano"
-                  src="/static/images/placeholders/logo/cardano.png"
-                />
-              </AvatarWrapper>
-              <Typography variant="h5" noWrap>
-                Cardano
-              </Typography>
-              <Typography variant="subtitle1" noWrap>
-                ADA
-              </Typography>
-              <Box
-                sx={{
-                  pt: 3
-                }}
-              >
-                <Typography variant="h3" gutterBottom noWrap>
-                  $54,985.00
-                </Typography>
-                <Typography variant="subtitle2" noWrap>
-                  34,985 ADA
-                </Typography>
-              </Box>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid xs={12} sm={6} md={3} item>
-          <Tooltip arrow title="Click to add a new wallet">
-            <CardAddAction>
-              <CardActionArea
-                sx={{
-                  px: 1
-                }}
-              >
-                <CardContent>
-                  <AvatarAddWrapper>
-                    <AddTwoToneIcon fontSize="large" />
-                  </AvatarAddWrapper>
-                </CardContent>
-              </CardActionArea>
-            </CardAddAction>
-          </Tooltip>
+              </Grid>
+              <Grid xs={12} sm={7} item display="flex" alignItems="center">
+                <List
+                  disablePadding
+                  sx={{
+                    width: '100%'
+                  }}
+                >
+                  <ListItem disableGutters>
+                    <ListItemAvatarWrapper>
+                      <img
+                        alt="Bill"
+                        src="/static/images/placeholders/logo/bill.png"
+                      />
+                    </ListItemAvatarWrapper>
+                    <ListItemText
+                      primary="Wastage Bill"
+                      primaryTypographyProps={{ variant: 'h5', noWrap: true }}
+                      secondary="Wastage Bill"
+                      secondaryTypographyProps={{
+                        variant: 'subtitle2',
+                        noWrap: true
+                      }}
+                    />
+                    <Box>
+                      <Typography align="right" variant="h4" noWrap>
+                        10%
+                      </Typography>
+                      <Text color="success">10%</Text>
+                    </Box>
+                  </ListItem>
+                  <ListItem disableGutters>
+                    <ListItemAvatarWrapper>
+                      <img
+                        alt="waste"
+                        src="/static/images/placeholders/logo/wastage.png"
+                      />
+                    </ListItemAvatarWrapper>
+                    <ListItemText
+                      primary="Wastage"
+                      primaryTypographyProps={{ variant: 'h5', noWrap: true }}
+                      secondary="Wastage"
+                      secondaryTypographyProps={{
+                        variant: 'subtitle2',
+                        noWrap: true
+                      }}
+                    />
+                    <Box>
+                      <Typography align="right" variant="h4" noWrap>
+                        20%
+                      </Typography>
+                      <Text color="error">20%</Text>
+                    </Box>
+                  </ListItem>
+                  <ListItem disableGutters>
+                    <ListItemAvatarWrapper>
+                      <img
+                        alt="ADA"
+                        src="/static/images/placeholders/logo/energy.png"
+                      />
+                    </ListItemAvatarWrapper>
+                    <ListItemText
+                      primary="Renewable Energy"
+                      primaryTypographyProps={{ variant: 'h5', noWrap: true }}
+                      secondary="Renewable Energy"
+                      secondaryTypographyProps={{
+                        variant: 'subtitle2',
+                        noWrap: true
+                      }}
+                    />
+                    <Box>
+                      <Typography align="right" variant="h4" noWrap>
+                        20%
+                      </Typography>
+                      <Text color="success">20%</Text>
+                    </Box>
+                  </ListItem>
+                  <ListItem disableGutters>
+                    <ListItemAvatarWrapper>
+                      <img
+                        alt="ETH"
+                        src="/static/images/placeholders/logo/product.png"
+                      />
+                    </ListItemAvatarWrapper>
+                    <ListItemText
+                      primary="New Product"
+                      primaryTypographyProps={{ variant: 'h5', noWrap: true }}
+                      secondary="New Product"
+                      secondaryTypographyProps={{
+                        variant: 'subtitle2',
+                        noWrap: true
+                      }}
+                    />
+                    <Box>
+                      <Typography align="right" variant="h4" noWrap>
+                        30%
+                      </Typography>
+                      <Text color="error">40.38%</Text>
+                    </Box>
+                  </ListItem>
+                </List>
+              </Grid>
+            </Grid>
+          </Box>
         </Grid>
       </Grid>
-    </>
+    </Card>
   );
 }
 
-export default Wallets;
+export default AccountBalance;
