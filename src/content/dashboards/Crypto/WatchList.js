@@ -38,7 +38,7 @@ function WatchList() {
           pb: 3
         }}
       >
-        <Typography variant="h3">Watch List</Typography>
+        <Typography variant="h3">Work Progress</Typography>
         <ToggleButtonGroup
           value={tabs}
           exclusive
