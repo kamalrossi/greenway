@@ -26,7 +26,7 @@ function PageHeader() {
           Welcome, {user.name}!
         </Typography>
         <Typography variant="subtitle2">
-          Today is a good day to start trading crypto assets!
+          Have a good day!
         </Typography>
       </Grid>
     </Grid>
