@@ -13,7 +13,7 @@ function DashboardCrypto() {
   return (
     <>
       <Helmet>
-        <title>Crypto Dashboard</title>
+        <title>Greenway Dashboard</title>
       </Helmet>
       <PageTitleWrapper>
         <PageHeader />
