@@ -18,7 +18,7 @@ function Footer() {
       >
         <Box>
           <Typography variant="subtitle1">
-            &copy; 2022 - Tokyo Free WHITE React Javascript Admin Dashboard
+            &copy; 2022 - GreenWay-All Rights Reserved
           </Typography>
         </Box>
         <Typography
@@ -27,13 +27,13 @@ function Footer() {
           }}
           variant="subtitle1"
         >
-          Crafted by{' '}
+         
           <Link
-            href="https://bloomui.com"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
-            BloomUI.com
+         GreenWay
           </Link>
         </Typography>
       </Box>
