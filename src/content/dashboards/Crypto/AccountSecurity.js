@@ -66,11 +66,7 @@ function AccountSecurity() {
             py: 2
           }}
         >
-          <ListItemAvatar>
-            <AvatarWrapperError>
-              <LockTwoToneIcon />
-            </AvatarWrapperError>
-          </ListItemAvatar>
+        <Avatar alt="truck" src="/static/images/placeholders/logo/truck.png" />
           <ListItemText
             primary={<Text color="black">Truck</Text>}
             primaryTypographyProps={{
@@ -122,11 +118,7 @@ function AccountSecurity() {
             py: 2
           }}
         >
-          <ListItemAvatar>
-            <AvatarWrapperWarning>
-              <EmailTwoToneIcon />
-            </AvatarWrapperWarning>
-          </ListItemAvatar>
+          <Avatar alt="truck" src="/static/images/placeholders/logo/pickup.png" />
           <ListItemText
             primary={<Text color="black">Pick-up</Text>}
             primaryTypographyProps={{
