@@ -123,20 +123,20 @@ function WatchListColumn() {
   };
   const chart1Data = [
     {
-      name: 'Bitcoin Price',
-      data: [55.701, 57.598, 48.607, 46.439, 58.755, 46.978, 58.16]
+      name: 'In-Process Wastage',
+      data: [600, 700, 540, 600, 700, 300, 580]
     }
   ];
   const chart2Data = [
     {
-      name: 'Ethereum Price',
-      data: [13, 16, 14, 20, 8, 11, 20]
+      name: 'Processed Wastage',
+      data: [1600, 1700, 1540, 1600, 1700, 1300, 1580]
     }
   ];
   const chart3Data = [
     {
-      name: 'Cardano Price',
-      data: [51.85, 41.77, 22.09, 42.0, 71.9, 51.84, 31.84]
+      name: 'New Product',
+      data: [60, 70, 52, 62.0, 71.9, 21.84, 51.84]
     }
   ];
 
@@ -168,10 +168,10 @@ function WatchListColumn() {
               </AvatarWrapper>
               <Box>
                 <Typography variant="h4" noWrap>
-                  Bitcoin
+                In-process wastage                
                 </Typography>
                 <Typography variant="subtitle1" noWrap>
-                  BTC
+                  In-process wastage
                 </Typography>
               </Box>
             </Box>
@@ -243,10 +243,10 @@ function WatchListColumn() {
               </AvatarWrapper>
               <Box>
                 <Typography variant="h4" noWrap>
-                  Ethereum
+                  Processed wastage
                 </Typography>
                 <Typography variant="subtitle1" noWrap>
-                  ETH
+                  Processed wastage
                 </Typography>
               </Box>
             </Box>
@@ -318,10 +318,10 @@ function WatchListColumn() {
               </AvatarWrapper>
               <Box>
                 <Typography variant="h4" noWrap>
-                  Cardano
+                  New product
                 </Typography>
                 <Typography variant="subtitle1" noWrap>
-                  ADA
+                   New product
                 </Typography>
               </Box>
             </Box>
