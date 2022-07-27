@@ -364,7 +364,7 @@ function SidebarMenu() {
                   to="/components/tooltips"
                   startIcon={<LocalPharmacyTwoToneIcon />}
                 >
-                  Tooltips
+                 Compliance
                 </Button>
               </ListItem>
               <ListItem component="div">
@@ -375,7 +375,7 @@ function SidebarMenu() {
                   to="/components/avatars"
                   startIcon={<RedeemTwoToneIcon />}
                 >
-                  Avatars
+                  Configuration
                 </Button>
               </ListItem>
               <ListItem component="div">
@@ -386,7 +386,7 @@ function SidebarMenu() {
                   to="/components/cards"
                   startIcon={<SettingsTwoToneIcon />}
                 >
-                  Cards
+                  Maintenance
                 </Button>
               </ListItem>
               <ListItem component="div">
@@ -397,7 +397,7 @@ function SidebarMenu() {
                   to="/components/forms"
                   startIcon={<TrafficTwoToneIcon />}
                 >
-                  Forms
+                Recruitment
                 </Button>
               </ListItem>
             </List>
