@@ -233,7 +233,7 @@ function AccountBalance() {
                     <ListItemAvatarWrapper>
                       <img
                         alt="Non-Plastic"
-                        src="/static/images/placeholders/logo/bitcoin.png"
+                        src="/static/images/placeholders/logo/nonplastic.png"
                       />
                     </ListItemAvatarWrapper>
                     <ListItemText
@@ -256,7 +256,7 @@ function AccountBalance() {
                     <ListItemAvatarWrapper>
                       <img
                         alt="Plastic"
-                        src="/static/images/placeholders/logo/ripple.png"
+                        src="/static/images/placeholders/logo/plastic.png"
                       />
                     </ListItemAvatarWrapper>
                     <ListItemText
@@ -279,7 +279,7 @@ function AccountBalance() {
                     <ListItemAvatarWrapper>
                       <img
                         alt="Garbage"
-                        src="/static/images/placeholders/logo/cardano.png"
+                        src="/static/images/placeholders/logo/garbage.png"
                       />
                     </ListItemAvatarWrapper>
                     <ListItemText
@@ -302,7 +302,7 @@ function AccountBalance() {
                     <ListItemAvatarWrapper>
                       <img
                         alt="Food"
-                        src="/static/images/placeholders/logo/ethereum.png"
+                        src="/static/images/placeholders/logo/food.png"
                       />
                     </ListItemAvatarWrapper>
                     <ListItemText
