@@ -14,7 +14,10 @@ import {
 import LockTwoToneIcon from '@mui/icons-material/LockTwoTone';
 import PhoneLockedTwoToneIcon from '@mui/icons-material/PhoneLockedTwoTone';
 import EmailTwoToneIcon from '@mui/icons-material/EmailTwoTone';
+
+
 import Text from 'src/components/Text';
+
 
 const AvatarWrapperError = styled(Avatar)(
   ({ theme }) => `
@@ -55,7 +58,7 @@ function AccountSecurity() {
 
   return (
     <Card>
-      <CardHeader title="Account Security" />
+      <CardHeader title="Transport" />
       <Divider />
       <List disablePadding>
         <ListItem
@@ -93,11 +96,7 @@ function AccountSecurity() {
             py: 2
           }}
         >
-          <ListItemAvatar>
-            <AvatarWrapperSuccess>
-              <PhoneLockedTwoToneIcon />
-            </AvatarWrapperSuccess>
-          </ListItemAvatar>
+        <Avatar1 alt="truck" src="/static/images/placeholders/logo/van.png" />
           <ListItemText
             primary={<Text color="black">Covered Van</Text>}
             primaryTypographyProps={{
