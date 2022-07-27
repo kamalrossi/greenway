@@ -148,7 +148,7 @@ function AccountBalance() {
                 fontWeight="normal"
                 color="text.secondary"
               >
-                1.0045983485234 BTC
+                600 Killo Ton
               </Typography>
               <Box
                 display="flex"
@@ -176,12 +176,12 @@ function AccountBalance() {
             <Grid container spacing={3}>
               <Grid sm item>
                 <Button fullWidth variant="outlined">
-                  Send
+                Learn More
                 </Button>
               </Grid>
               <Grid sm item>
                 <Button fullWidth variant="contained">
-                  Receive
+                  Subscribe
                 </Button>
               </Grid>
             </Grid>
@@ -232,14 +232,14 @@ function AccountBalance() {
                   <ListItem disableGutters>
                     <ListItemAvatarWrapper>
                       <img
-                        alt="BTC"
+                        alt="Non-Plastic"
                         src="/static/images/placeholders/logo/bitcoin.png"
                       />
                     </ListItemAvatarWrapper>
                     <ListItemText
-                      primary="BTC"
+                      primary="Non-Plastic"
                       primaryTypographyProps={{ variant: 'h5', noWrap: true }}
-                      secondary="Bitcoin"
+                      secondary="Non-Plastic"
                       secondaryTypographyProps={{
                         variant: 'subtitle2',
                         noWrap: true
@@ -255,14 +255,14 @@ function AccountBalance() {
                   <ListItem disableGutters>
                     <ListItemAvatarWrapper>
                       <img
-                        alt="XRP"
+                        alt="Plastic"
                         src="/static/images/placeholders/logo/ripple.png"
                       />
                     </ListItemAvatarWrapper>
                     <ListItemText
-                      primary="XRP"
+                      primary="Plastic"
                       primaryTypographyProps={{ variant: 'h5', noWrap: true }}
-                      secondary="Ripple"
+                      secondary="Plastic"
                       secondaryTypographyProps={{
                         variant: 'subtitle2',
                         noWrap: true
@@ -278,37 +278,37 @@ function AccountBalance() {
                   <ListItem disableGutters>
                     <ListItemAvatarWrapper>
                       <img
-                        alt="ADA"
+                        alt="Garbage"
                         src="/static/images/placeholders/logo/cardano.png"
                       />
                     </ListItemAvatarWrapper>
                     <ListItemText
-                      primary="ADA"
+                      primary="Garbage"
                       primaryTypographyProps={{ variant: 'h5', noWrap: true }}
-                      secondary="Cardano"
+                      secondary="Garbage"
                       secondaryTypographyProps={{
-                        variant: 'subtitle2',
+                        variant: 'Plastic Waste',
                         noWrap: true
                       }}
                     />
                     <Box>
                       <Typography align="right" variant="h4" noWrap>
-                        40%
+                        20%
                       </Typography>
-                      <Text color="success">+10.50%</Text>
+                      <Text color="success">+10%</Text>
                     </Box>
                   </ListItem>
                   <ListItem disableGutters>
                     <ListItemAvatarWrapper>
                       <img
-                        alt="ETH"
+                        alt="Food"
                         src="/static/images/placeholders/logo/ethereum.png"
                       />
                     </ListItemAvatarWrapper>
                     <ListItemText
-                      primary="ETH"
+                      primary="Food"
                       primaryTypographyProps={{ variant: 'h5', noWrap: true }}
-                      secondary="Ethereum"
+                      secondary="Food"
                       secondaryTypographyProps={{
                         variant: 'subtitle2',
                         noWrap: true
@@ -318,7 +318,7 @@ function AccountBalance() {
                       <Typography align="right" variant="h4" noWrap>
                         30%
                       </Typography>
-                      <Text color="error">-12.38%</Text>
+                      <Text color="error">20%</Text>
                     </Box>
                   </ListItem>
                 </List>
