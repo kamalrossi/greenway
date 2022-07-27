@@ -163,7 +163,7 @@ function WatchListColumn() {
               <AvatarWrapper>
                 <img
                   alt="BTC"
-                  src="/static/images/placeholders/logo/bitcoin.png"
+                  src="/static/images/placeholders/logo/pending.png"
                 />
               </AvatarWrapper>
               <Box>
@@ -238,7 +238,7 @@ function WatchListColumn() {
               <AvatarWrapper>
                 <img
                   alt="ETH"
-                  src="/static/images/placeholders/logo/ethereum.png"
+                  src="/static/images/placeholders/logo/done.png"
                 />
               </AvatarWrapper>
               <Box>
@@ -313,7 +313,7 @@ function WatchListColumn() {
               <AvatarWrapper>
                 <img
                   alt="ADA"
-                  src="/static/images/placeholders/logo/cardano.png"
+                  src="/static/images/placeholders/logo/renew.png"
                 />
               </AvatarWrapper>
               <Box>
