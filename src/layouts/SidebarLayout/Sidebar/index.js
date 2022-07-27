@@ -1,3 +1,4 @@
+
 import { useContext } from 'react';
 import Scrollbar from 'src/components/Scrollbar';
 import { SidebarContext } from 'src/contexts/SidebarContext';
@@ -61,7 +62,7 @@ function Sidebar() {
                 width: 52
               }}
             >
-              <Logo />
+            
             </Box>
           </Box>
           <Divider
