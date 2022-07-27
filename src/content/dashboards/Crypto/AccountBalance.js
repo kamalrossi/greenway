@@ -137,18 +137,18 @@ function AccountBalance() {
               }}
               variant="h4"
             >
-              Account Balance
+              Waste Qty
             </Typography>
             <Box>
               <Typography variant="h1" gutterBottom>
-                $54,584.23
+               6000 Killo Ton
               </Typography>
               <Typography
                 variant="h4"
                 fontWeight="normal"
                 color="text.secondary"
               >
-                600 Killo Ton
+                6000 Killo Ton
               </Typography>
               <Box
                 display="flex"
@@ -166,7 +166,7 @@ function AccountBalance() {
                   <TrendingUp fontSize="large" />
                 </AvatarSuccess>
                 <Box>
-                  <Typography variant="h4">+ $3,594.00</Typography>
+                  <Typography variant="h4">+1000 KilloTon</Typography>
                   <Typography variant="subtitle2" noWrap>
                     this month
                   </Typography>
