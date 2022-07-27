@@ -313,7 +313,7 @@ function WatchListColumn() {
               <AvatarWrapper>
                 <img
                   alt="ADA"
-                  src="/static/images/placeholders/logo/renew.png"
+                  src="/static/images/placeholders/logo/renew.jpg"
                 />
               </AvatarWrapper>
               <Box>
