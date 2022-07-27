@@ -190,10 +190,10 @@ function WatchListColumn() {
                   mb: 1
                 }}
               >
-                $56,475.99
+               600 KilloTon
               </Typography>
               <Text color="success">
-                <b>+12.5%</b>
+                <b>+10%</b>
               </Text>
             </Box>
             <Box
@@ -265,7 +265,7 @@ function WatchListColumn() {
                   mb: 1
                 }}
               >
-                $1,968.00
+                200 Killo Ton
               </Typography>
               <Text color="error">
                 <b>-3.24%</b>
@@ -340,7 +340,7 @@ function WatchListColumn() {
                   mb: 1
                 }}
               >
-                $23.00
+               400 KilloTon
               </Typography>
               <Text color="error">
                 <b>-0.33%</b>
