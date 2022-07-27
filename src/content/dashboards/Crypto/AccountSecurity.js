@@ -96,7 +96,7 @@ function AccountSecurity() {
             py: 2
           }}
         >
-        <Avatar1 alt="truck" src="/static/images/placeholders/logo/van.png" />
+        <Avatar alt="truck" src="/static/images/placeholders/logo/van.png" />
           <ListItemText
             primary={<Text color="black">Covered Van</Text>}
             primaryTypographyProps={{
