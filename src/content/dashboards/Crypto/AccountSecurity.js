@@ -69,7 +69,7 @@ function AccountSecurity() {
             </AvatarWrapperError>
           </ListItemAvatar>
           <ListItemText
-            primary={<Text color="black">2FA Authentication</Text>}
+            primary={<Text color="black">Truck</Text>}
             primaryTypographyProps={{
               variant: 'body1',
               fontWeight: 'bold',
@@ -77,7 +77,7 @@ function AccountSecurity() {
               gutterBottom: true,
               noWrap: true
             }}
-            secondary={<Text color="error">Disabled</Text>}
+            secondary={<Text color="error">12</Text>}
             secondaryTypographyProps={{ variant: 'body2', noWrap: true }}
           />
           <Switch
@@ -99,7 +99,7 @@ function AccountSecurity() {
             </AvatarWrapperSuccess>
           </ListItemAvatar>
           <ListItemText
-            primary={<Text color="black">Phone Verification</Text>}
+            primary={<Text color="black">Covered Van</Text>}
             primaryTypographyProps={{
               variant: 'body1',
               fontWeight: 'bold',
@@ -107,7 +107,7 @@ function AccountSecurity() {
               gutterBottom: true,
               noWrap: true
             }}
-            secondary={<Text color="success">Active</Text>}
+            secondary={<Text color="success">34</Text>}
             secondaryTypographyProps={{ variant: 'body2', noWrap: true }}
           />
           <Switch
@@ -129,7 +129,7 @@ function AccountSecurity() {
             </AvatarWrapperWarning>
           </ListItemAvatar>
           <ListItemText
-            primary={<Text color="black">Recovery Email</Text>}
+            primary={<Text color="black">Pick-up</Text>}
             primaryTypographyProps={{
               variant: 'body1',
               fontWeight: 'bold',
@@ -137,7 +137,7 @@ function AccountSecurity() {
               gutterBottom: true,
               noWrap: true
             }}
-            secondary={<Text color="warning">Not completed</Text>}
+            secondary={<Text color="warning">22</Text>}
             secondaryTypographyProps={{ variant: 'body2', noWrap: true }}
           />
           <Switch
