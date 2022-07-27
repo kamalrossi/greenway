@@ -116,21 +116,21 @@ function WatchListRow() {
 
   const Box1Data = [
     {
-      name: 'Bitcoin',
+      name: 'In-process Wastage',
       data: [55.701, 57.598, 48.607, 46.439, 58.755, 46.978, 58.16]
     }
   ];
 
   const Box2Data = [
     {
-      name: 'Ethereum',
+      name: 'Processed-Waste',
       data: [1.854, 1.873, 1.992, 2.009, 1.909, 1.942, 1.884]
     }
   ];
 
   const Box3Data = [
     {
-      name: 'Cardano',
+      name: 'New Product',
       data: [13, 16, 14, 18, 8, 11, 20]
     }
   ];
@@ -158,16 +158,16 @@ function WatchListRow() {
             <Box display="flex" alignItems="center">
               <AvatarWrapper>
                 <img
-                  alt="BTC"
+                  alt="In-Process Waste"
                   src="/static/images/placeholders/logo/bitcoin.png"
                 />
               </AvatarWrapper>
               <Box>
                 <Typography variant="h4" noWrap>
-                  Bitcoin
+                  In-Process Waste
                 </Typography>
                 <Typography variant="subtitle1" noWrap>
-                  BTC
+                  In-Process Waste
                 </Typography>
               </Box>
             </Box>
@@ -227,16 +227,16 @@ function WatchListRow() {
             <Box display="flex" alignItems="center">
               <AvatarWrapper>
                 <img
-                  alt="ETH"
+                  alt="Processed Waste"
                   src="/static/images/placeholders/logo/ethereum.png"
                 />
               </AvatarWrapper>
               <Box>
                 <Typography variant="h4" noWrap>
-                  Ethereum
+                  Processed Waste
                 </Typography>
                 <Typography variant="subtitle1" noWrap>
-                  ETH
+                  Processed Waste
                 </Typography>
               </Box>
             </Box>
@@ -296,16 +296,16 @@ function WatchListRow() {
             <Box display="flex" alignItems="center">
               <AvatarWrapper>
                 <img
-                  alt="ADA"
+                  alt="New Product"
                   src="/static/images/placeholders/logo/cardano.png"
                 />
               </AvatarWrapper>
               <Box>
                 <Typography variant="h4" noWrap>
-                  Cardano
+                  New Product
                 </Typography>
                 <Typography variant="subtitle1" noWrap>
-                  ADA
+                  New Product
                 </Typography>
               </Box>
             </Box>
